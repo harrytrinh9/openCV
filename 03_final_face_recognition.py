@@ -4,7 +4,7 @@ import os
 
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 recognizer.read('trainer/trainer.yml')
-cascPath = os.path.dirname(cv2.__file__)+"/data/haarcascade_frontalface_default.xml"
+cascPath = os.path.dirname(cv2.__file__) + "/data/haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 font = cv2.FONT_HERSHEY_SIMPLEX
 #iniciate id counter
