@@ -7,6 +7,7 @@ video_capture = cv.VideoCapture(0)
 video_capture.set(3, 640) # set width 1280
 video_capture.set(4, 480) # set heigh 960
 
+
 while True:
     # Capture frame-by-frame
     ret, frames = video_capture.read()
@@ -20,7 +21,7 @@ while True:
     )
     # Draw a rectangle around the faces
     for (x, y, w, h) in faces:
-        cv.rectangle(frames, (x, y), (x+w, y+h), (0, 255, 0), 2)
+        cv.rectangle(frames, (x, y), (x+w, y+h), (255, 0, 0), 2)
     # Display the resulting frame
     cv.imshow('Video', frames)
     if cv.waitKey(1) & 0xFF == ord('q'):
