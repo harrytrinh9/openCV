@@ -7,7 +7,7 @@ cap = cv2.VideoCapture(0)
 cap.set(3,640) # set Width
 cap.set(4,480) # set Height
 
-cascPath=os.path.dirname(cv2.__file__)+"/data/haarcascade_frontalface_default.xml"
+cascPath=os.path.dirname(cv2.__file__) + "/data/haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 
 while(True):

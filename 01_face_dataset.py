@@ -1,5 +1,7 @@
 import cv2
 import os
+# Collect face data from camera and save to dataset folder
+2
 cam = cv2.VideoCapture(0)
 cam.set(3, 640) # set video width
 cam.set(4, 480) # set video height

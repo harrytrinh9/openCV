@@ -10,7 +10,7 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 #iniciate id counter
 id = 0
 # names related to ids: example ==> Marcelo: id=1,  etc
-names = ['None', 'Cau Ha', 'Paula', 'Ilza', 'Z', 'W'] 
+names = ['None', 'Bo Ha', 'Bong', 'Me Quyen', 'Z', 'W'] 
 # Initialize and start realtime video capture
 cam = cv2.VideoCapture(0)
 cam.set(3, 640) # set video widht
@@ -47,7 +47,7 @@ while True:
                     (x+5,y-5), 
                     font, 
                     1, 
-                    (255,255,255), 
+                    (255,0,0), 
                     2
                    )
         cv2.putText(
